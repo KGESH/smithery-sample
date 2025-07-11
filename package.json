@@ -1,0 +1,26 @@
+{
+  "name": "sample-mcp-server-987",
+  "version": "0.0.1",
+  "description": "Say hello to user.",
+  "main": "dist/say-hello.js",
+  "type": "module",
+  "author": "KGESH",
+  "license": "ISC",
+  "bin": {
+    "say-hello": "dist/say-hello.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && chmod +x dist/say-hello.js",
+    "start": "node dist/say-hello.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3"
+  }
+}
